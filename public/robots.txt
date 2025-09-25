@@ -1,0 +1,22 @@
+# Robots.txt for Finom Business Funding Website
+# https://finom.co/
+
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+# Allow access to CSS and JS files for proper rendering
+Allow: /src/
+Allow: /public/
+
+# Allow access to static assets
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.png
+
+# Disallow access to source maps and development files
+Disallow: /*.map
+
+# Crawl delay (optional - helps prevent overloading your server)
+Crawl-delay: 1

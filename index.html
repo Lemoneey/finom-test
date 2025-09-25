@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get fast business funding with flexible loan terms and competitive rates. Quick approvals for equipment, inventory, and cash flow needs. Apply now for business growth financing."
+    />
+    <title>Finom Test</title>
+  </head>
+  <body
+    class="bg-app font-poppins text-primary-100 flex h-screen items-center justify-center px-5"
+  >
+    <div
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+      class="bg-content border-secondary-100 relative h-fit max-w-[700px] overflow-hidden rounded-2xl border-2 p-5 sm:px-11 sm:py-8"
+    >
+      <img
+        class="absolute right-0 bottom-[-2px] hidden h-[160px] sm:right-[-20px] sm:block md:right-0"
+        src="coins.webp"
+        alt="Coins Icon"
+      />
+      <div
+        id="close-modal"
+        aria-label="Close Modal"
+        class="bg-brand-5 hover:bg-brand-10 absolute top-3 right-3 flex h-7 w-7 cursor-pointer items-center justify-center rounded-full transition-colors sm:h-9 sm:w-9"
+      >
+        <img class="h-5 w-5 sm:h-6 sm:w-6" src="close.svg" alt="Close Icon" />
+      </div>
+
+      <div class="relative">
+        <h1 id="modal-title" class="pr-7 text-2xl font-semibold">
+          Get the Business Funding You Need
+        </h1>
+
+        <div
+          class="mt-5 mb-5 flex flex-col gap-5 sm:mt-8 sm:mb-8 md:flex-row md:gap-10"
+        >
+          <p id="modal-description" class="flex-1">
+            Expand your business with a flexible loan tailored to your needs.
+            Whether you're investing in new equipment, increasing inventory, or
+            boosting cash flow, we offer quick approvals and competitive rates
+            to keep your business growing.
+          </p>
+
+          <ul class="flex flex-1 flex-col gap-3 font-medium">
+            <li class="flex items-start gap-[14px]">
+              <img src="check.svg" alt="Check Icon" />
+              <span>Fast approval process</span>
+            </li>
+            <li class="flex items-start gap-[14px]">
+              <img src="check.svg" alt="Check Icon" />
+              <span>Flexible repayment terms</span>
+            </li>
+            <li class="flex items-start gap-[14px]">
+              <img src="check.svg" alt="Check Icon" />
+              <span>Competitive interest rates</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col items-center gap-5 sm:flex-row">
+          <button
+            class="bg-accent-90 hover:bg-accent-100 hover:shadow-accent-30 w-full cursor-pointer rounded-2xl px-2 py-4 font-medium text-white transition-colors hover:shadow-sm sm:w-[138px] sm:py-2"
+          >
+            Apply Now
+          </button>
+          <a
+            class="text-brand-70 hover:text-brand-100 text-[12px] font-semibold tracking-[0.5px] transition-colors"
+            href="https://finom.co/"
+            >MORE INFORMATION</a
+          >
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@theme {
+  --breakpoint-sm: 601px;
+
+  --font-poppins: Poppins, sans-serif;
+
+  --color-app: #f3f2f7;
+  --color-content: #ffffff;
+
+  --color-brand-100: #0b002e;
+  --color-brand-70: #0b002ea3;
+  --color-brand-10: #0b002e12;
+  --color-brand-5: #0b002e0d;
+
+  --color-accent-100: #e64453;
+  --color-accent-90: #ff4c5c;
+  --color-accent-30: #ffc9ce;
+
+  --color-secondary-100: #6666ff;
+}
+
+.transition-colors {
+  @apply transition-colors duration-300 ease-out;
+}
+
+.modal--hidden {
+  @apply scale-95 opacity-0 transition-all duration-300 ease-out;
+}
